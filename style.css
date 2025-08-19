@@ -1,0 +1,53 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* CABEÇALHO VERMELHO */
+  .topo {
+    background-color: #C11926; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  /* LOGO SIMPLES */
+  .logo  {
+    margin: 0;
+  }
+  
+  /* BARRA DE BUSCA */
+  .busca {
+    flex: 1;
+    display: flex;
+    margin: 0 20px;
+  }
+  
+  .busca input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .busca button {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  
+  /* LINKS DO LADO DIREITO */
+  .acoes a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  
+  
