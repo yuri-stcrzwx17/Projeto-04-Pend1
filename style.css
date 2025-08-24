@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #f5f5f5;
 }
 
 .topo {
@@ -11,15 +12,13 @@ body {
   padding: 8px 20px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.logo img {
+  margin-right: 15px;
 }
 
 .busca {
   flex: 1;
   display: flex;
-  margin: 0 20px;
 }
 
 .busca input {
@@ -82,5 +81,60 @@ body {
 .menu a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
+}
+
+/* Produtos */
+.lista-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: scale(1.02);
+}
+
+.card img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.card p {
+  font-size: 13px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.card .preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007600;
+  margin-top: 6px;
+}
+
+.stars {
+  color: orange;
   font-size: 14px;
 }
