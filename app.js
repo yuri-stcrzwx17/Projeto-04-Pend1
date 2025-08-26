@@ -27,6 +27,11 @@ async function carregarProdutos() {
         <p class="preco">${precoFormatado}</p>
       `;
 
+     
+      card.addEventListener("click", () => {
+        alert(`Você apertou no Produto: ${prod.nome}`);
+      });
+
       container.appendChild(card);
     });
   } catch (error) {
